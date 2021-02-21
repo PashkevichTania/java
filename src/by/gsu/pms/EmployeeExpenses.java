@@ -3,7 +3,7 @@ package by.gsu.pms;
 public class EmployeeExpenses {
     //fields
 
-    public final int RATE = 2500;
+    public static final int RATE = 2500;
     private String account;
     private int transport;
     private int days;

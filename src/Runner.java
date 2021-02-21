@@ -1,4 +1,5 @@
 import by.gsu.pms.EmployeeExpenses;
+import by.gsu.pms.Converter;
 
 public class Runner {
 
@@ -82,6 +83,12 @@ public class Runner {
             }
         }
         System.out.println("Max = " + max);
+
+
+        //8
+
+        Converter newCurrency = new Converter(33,2);
+        System.out.println("Converted = " + newCurrency.convert(employees[3].getTotal()));
 
     }
 }
