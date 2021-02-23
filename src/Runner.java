@@ -88,7 +88,12 @@ public class Runner {
         //8
 
         Converter newCurrency = new Converter(33,2);
-        System.out.println("Converted = " + newCurrency.convert(employees[3].getTotal()));
+        for (EmployeeExpenses employee : employees) {
+            if (employee != null) {
+                newCurrency.convert(employee);
+                System.out.println("__________");
+            }
+        }
 
     }
 }

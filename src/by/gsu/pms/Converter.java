@@ -9,8 +9,13 @@ public class Converter {
         this.decimalPlaces  = decimalPlaces ;
     }
 
-    public double convert(int value){
-        double scale = Math.pow(10, decimalPlaces );
-        return Math.round((value/divider)*scale)/scale;
+    public void convert(EmployeeExpenses employee){
+        double scale = Math.pow(10, decimalPlaces);
+        System.out.println("rate = " + Math.round((EmployeeExpenses.RATE /divider)*scale)/scale );
+        System.out.println("account = " + employee.getAccount());
+        System.out.println("transport = " + Math.round((employee.getTransport()/divider)*scale)/scale);
+        System.out.println("days = " + employee.getDays());
+        System.out.println("total = " + Math.round((employee.getTotal()/divider)*scale)/scale);
+
     }
 }
