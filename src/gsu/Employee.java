@@ -37,4 +37,12 @@ public class Employee {
         this.payment = payment;
     }
 
+    public boolean haveKids() {
+        return kids;
+    }
+
+    public void setKids(boolean kids) {
+        this.kids = kids;
+    }
+
 }
