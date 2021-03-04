@@ -31,5 +31,9 @@ public class Main {
         int averagePayment = totalPayment/ employees.length;
         System.out.println("Average payment = " + averagePayment);
         System.out.println("Employees with kids = " + totalKids);
+
+        for (Employee employee : employees) {
+            System.out.println(employee);
+        }
     }
 }

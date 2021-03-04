@@ -45,4 +45,9 @@ public class Employee {
         this.kids = kids;
     }
 
+    @Override
+    public String toString() {
+        return name + ";" + payment + ";" + kids + ";";
+    }
+
 }
