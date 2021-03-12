@@ -34,4 +34,9 @@ public class Material {
     public void setDensity(int density) {
         this.density = density;
     }
+
+    @Override
+    public String toString() {
+        return name + ";" + density;
+    }
 }
