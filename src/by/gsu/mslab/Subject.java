@@ -8,8 +8,10 @@ public class Subject {
     //HAS A relation
     private Material material;
 
-    public Subject(){
-        this.material=new Material();
+    public Subject(String name, int volume, Material material){
+        this.material = material;
+        this.name = name;
+        this.volume =volume;
     }
 
     //getters / setters
