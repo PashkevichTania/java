@@ -4,14 +4,14 @@ public class Material {
     //fields
 
     private String name;
-    private float density;
+    private double density;
 
     //constructors
 
     public Material() {
         this("",0);
     }
-    public Material(String name, float density) {
+    public Material(String name, double density) {
         super();
         this.name = name;
         this.density = density;
@@ -27,11 +27,11 @@ public class Material {
         this.name = name;
     }
 
-    public float getDensity() {
+    public double getDensity() {
         return density;
     }
 
-    public void setDensity(float density) {
+    public void setDensity(double density) {
         this.density = density;
     }
 
