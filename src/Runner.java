@@ -1,6 +1,4 @@
-package by.gsu.mslab;
-
-public class Main {
+public class Runner {
 
     public static void main(String[] args) {
 	// write your code here
