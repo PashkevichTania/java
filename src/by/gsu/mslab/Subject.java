@@ -3,12 +3,12 @@ package by.gsu.mslab;
 public class Subject {
 
     private String name;
-    private int volume;
+    private float volume;
 
     //HAS A relation
     private Material material;
 
-    public Subject(String name, int volume, Material material){
+    public Subject(String name, float volume, Material material){
         this.material = material;
         this.name = name;
         this.volume =volume;
@@ -24,11 +24,11 @@ public class Subject {
         this.name = name;
     }
 
-    public int getVolume() {
+    public float getVolume() {
         return volume;
     }
 
-    public void setVolume(int volume) {
+    public void setVolume(float volume) {
         this.volume = volume;
     }
 
@@ -40,7 +40,7 @@ public class Subject {
         this.material = material;
     }
 
-    public int getMass(){
+    public float getMass(){
         return material.getDensity()*this.volume;
     }
     @Override
