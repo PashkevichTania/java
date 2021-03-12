@@ -37,4 +37,12 @@ public class Subject {
     public void setMaterial(Material material) {
         this.material = material;
     }
+
+    public int getMass(){
+        return material.getDensity()*this.volume;
+    }
+    @Override
+    public String toString() {
+        return name + ";" + volume + ";" + getMass();
+    }
 }
