@@ -1,10 +1,12 @@
 package by.gsu.pms;
 
 public class Purchase {
+    //fields
     private String name;
     private double price;
     private int number;
 
+    //constructors
     public Purchase(String name, double price, int number){
         super();
         this.name = name;
@@ -48,6 +50,10 @@ public class Purchase {
 
     @Override
     public String toString(){
-        return name + ";" + price + ";" + number + ";" + getCost();
+        return (name + ";" + price + ";" + number + ";" + getCost());
+    }
+
+    public boolean equals(Purchase purchase){
+        return (this.name == purchase.getName() && this.price == purchase.getPrice());
     }
 }
