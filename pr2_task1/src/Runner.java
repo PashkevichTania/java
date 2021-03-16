@@ -12,6 +12,7 @@ public class Runner {
 
     };
         DiscountPurchase pringles = new DiscountPurchase("pringles",250,1,10);
+        NumberDiscountPurchase nutella = new NumberDiscountPurchase("nutella",500,20,5.825);
 
     for (Purchase purchase : purchases) {
         if (purchase != null){
@@ -21,5 +22,6 @@ public class Runner {
     System.out.println(purchases[0].equals(purchases[1]));
     System.out.println(purchases[0].equals(purchases[2]));
     System.out.println(pringles);
+    System.out.println(nutella);
 }
 }

@@ -24,7 +24,7 @@ public class DiscountPurchase extends Purchase{
     //methods
 
     public double getCost(){
-        return super.price*this.number*this.discount/100;
+        return (this.price-this.discount)*this.number;
     }
 
 
