@@ -1,14 +1,14 @@
 package by.gsu.pms;
 
-public class PurchaseDiscount extends Purchase{
+public class DiscountPurchase extends Purchase{
     private int discount;
 
     //constructors
-    public PurchaseDiscount(String name, double price, int number, int discount){
+    public DiscountPurchase(String name, double price, int number, int discount){
         super(name,price,number);
         this.discount = discount;
     }
-    public PurchaseDiscount(){
+    public DiscountPurchase(){
         this("",0,0,0);
     }
     //getters and setters
@@ -27,9 +27,5 @@ public class PurchaseDiscount extends Purchase{
         return super.price*this.number*this.discount/100;
     }
 
-    @Override
-    public String toString(){
-        return (name + ";" + price + ";" + number + ";" + getCost());
-    }
 
 }

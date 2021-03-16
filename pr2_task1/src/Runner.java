@@ -11,7 +11,7 @@ public class Runner {
             new Purchase("almond milk",230,1),
 
     };
-        PurchaseDiscount pringles = new PurchaseDiscount("pringles",250,1,10);
+        DiscountPurchase pringles = new DiscountPurchase("pringles",250,1,10);
 
     for (Purchase purchase : purchases) {
         if (purchase != null){
