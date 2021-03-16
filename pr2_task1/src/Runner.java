@@ -11,6 +11,7 @@ public class Runner {
             new Purchase("almond milk",230,1),
 
     };
+        PurchaseDiscount pringles = new PurchaseDiscount("pringles",250,1,10);
 
     for (Purchase purchase : purchases) {
         if (purchase != null){
@@ -19,5 +20,6 @@ public class Runner {
     }
     System.out.println(purchases[0].equals(purchases[1]));
     System.out.println(purchases[0].equals(purchases[2]));
+    System.out.println(pringles);
 }
 }

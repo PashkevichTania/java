@@ -2,9 +2,9 @@ package by.gsu.pms;
 
 public class Purchase {
     //fields
-    private String name;
-    private double price;
-    private int number;
+    protected String name;
+    protected double price;
+    protected int number;
 
     //constructors
     public Purchase(String name, double price, int number){
