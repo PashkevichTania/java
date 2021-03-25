@@ -1,11 +1,8 @@
 import by.gsu.pms.*;
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
 
 public class Runner {
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args){
 
         Purchase[] purchases = {
 
@@ -28,4 +25,5 @@ public class Runner {
     System.out.println(pringles);
     System.out.println(nutella);
 
+}
 }
