@@ -23,11 +23,11 @@ public class PercentDiscountPurchase extends AbstractPurchase{
 
     @Override
     public int getCost() {
-        return super.getCost()*(percentDiscount/100);
+        return (int)Math.round(super.getCost()*((100-percentDiscount)/100));
     }
 
     @Override
     protected String fieldsToString() {
-        return super.fieldsToString() + percentDiscount;
+        return super.fieldsToString() + ";" + percentDiscount;
     }
 }
