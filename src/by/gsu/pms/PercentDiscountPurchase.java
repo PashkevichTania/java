@@ -4,13 +4,13 @@ public class PercentDiscountPurchase extends AbstractPurchase{
     private int percentDiscount;
 
 
-    public PercentDiscountPurchase(Commodity commodity, int number, int priceDiscount) {
+    public PercentDiscountPurchase(Commodity commodity, int number, int percentDiscount) {
         super(commodity, number);
-        this.percentDiscount = priceDiscount;
+        this.percentDiscount = percentDiscount;
     }
 
-    public PercentDiscountPurchase(int priceDiscount) {
-        this.percentDiscount = priceDiscount;
+    public PercentDiscountPurchase(int percentDiscount) {
+        this.percentDiscount = percentDiscount;
     }
 
     public int getPercentDiscount() {
