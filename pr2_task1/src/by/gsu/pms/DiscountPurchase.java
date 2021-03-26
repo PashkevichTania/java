@@ -1,5 +1,7 @@
 package by.gsu.pms;
 
+import java.util.Scanner;
+
 public class DiscountPurchase extends Purchase{
     private int discount;
 
@@ -10,6 +12,10 @@ public class DiscountPurchase extends Purchase{
     }
     public DiscountPurchase(){
         this("",0,0,0);
+    }
+
+    public DiscountPurchase(Scanner sc) {
+        this(sc.next(), sc.nextDouble(), sc.nextInt(), sc.nextInt());
     }
     //getters and setters
 

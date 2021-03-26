@@ -10,10 +10,9 @@ public class MyScanner {
     public enum PurchasesKinds {
         GENERAL_PURCHASE, DISCOUNT_PURCHASE, NUMBER_DISCOUNT_PURCHASE
     }
-    List<String> temps = new ArrayList<String>();
 
 
-    public Purchase getClassFromFile(Scanner sc) {
+    public static Purchase getClassFromFile(Scanner sc) {
 
 
         String id = sc.next();
@@ -21,9 +20,9 @@ public class MyScanner {
         PurchasesKinds kind = PurchasesKinds.valueOf(id);
 
         return switch (kind) {
-            case GENERAL_PURCHASE -> new Purchase();
-            case DISCOUNT_PURCHASE -> new DiscountPurchase();
-            case NUMBER_DISCOUNT_PURCHASE -> new NumberDiscountPurchase();
+            case GENERAL_PURCHASE -> new Purchase(sc);
+            case DISCOUNT_PURCHASE -> new DiscountPurchase(sc);
+            case NUMBER_DISCOUNT_PURCHASE -> new NumberDiscountPurchase(sc);
         };
 
     }

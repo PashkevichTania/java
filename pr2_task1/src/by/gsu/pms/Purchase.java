@@ -1,5 +1,7 @@
 package by.gsu.pms;
 
+import java.util.Scanner;
+
 public class Purchase {
     //fields
     protected String name;
@@ -15,6 +17,10 @@ public class Purchase {
     }
     public Purchase(){
         this("",0,0);
+    }
+
+    public Purchase(Scanner sc) {
+        this(sc.next(), sc.nextDouble(), sc.nextInt());
     }
     //getters and setters
 
