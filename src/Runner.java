@@ -30,6 +30,8 @@ public class Runner {
                 minCostPurchase = purchase;
             }
         }
+        System.out.println("minCostPurchase:");
         System.out.println(minCostPurchase);
+        purchases[0].view();
     }
 }

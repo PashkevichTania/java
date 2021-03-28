@@ -1,6 +1,6 @@
 package by.gsu.pms;
 
-public abstract class AbstractPurchase implements Comparable<AbstractPurchase>{
+public abstract class AbstractPurchase implements Comparable<AbstractPurchase>,ViewPurchase{
     private Commodity commodity;
     private int number;
 
@@ -47,5 +47,9 @@ public abstract class AbstractPurchase implements Comparable<AbstractPurchase>{
     @Override
     public int compareTo(AbstractPurchase purchase) {
         return purchase.getCost()-this.getCost();
+    }
+
+    public void view(){
+        System.out.println("Name:"+commodity.getName()+"; Price:"+commodity.getPrice()+"; Number:"+number+"; Cost:"+getCost());
     }
 }
