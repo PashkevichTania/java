@@ -23,7 +23,7 @@ public class PercentDiscountPurchase extends AbstractPurchase{
 
     @Override
     public int getCost() {
-        return (int)Math.round(super.getCost()*((100-percentDiscount)/100));
+        return (int)Math.round(super.getCost()*((100-percentDiscount)/100.0));
     }
 
     @Override
