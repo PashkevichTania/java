@@ -1,6 +1,9 @@
 package by.gsu.pms;
 
-public class Employee {
+import java.io.Serializable;
+import java.util.Scanner;
+
+public class Employee implements Serializable {
 
     private String name;
     private int payment;
@@ -19,6 +22,10 @@ public class Employee {
         this.name = name;
         this.payment = payment;
         this.kids = false;
+    }
+
+    public Employee(Scanner scanner){
+        this(scanner.next(), scanner.nextInt(), scanner.nextBoolean());
     }
 
     public String getName() {
