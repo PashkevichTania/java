@@ -16,8 +16,14 @@ public class Runner {
             final int MAX = 10;
             Employee[] employees = new Employee[MAX];
 
+
+
             for (int i = 0; i < MAX; i++) {
-                employees[i] = new Employee(scanner);
+                try{
+                    employees[i] = new Employee(scanner);
+                }catch(Exception e){
+                    employees[i] = new Employee();
+                }
             }
             for (Employee employee : employees) {
                 System.out.println(employee);
