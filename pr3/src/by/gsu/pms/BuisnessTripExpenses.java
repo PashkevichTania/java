@@ -1,9 +1,9 @@
 package by.gsu.pms;
 
-public class BuisnessTripExpenses {
+public class BuisnessTripExpenses implements Comparable<BuisnessTripExpenses> {
     //fields
 
-    public static final int RATE = 2500;
+    private static int RATE = 2500;
     private String account;
     private int transport;
     private int days;
@@ -46,6 +46,9 @@ public class BuisnessTripExpenses {
         this.days = days;
     }
 
+    public static void setRate(int rate) {
+        BuisnessTripExpenses.RATE = rate;
+    }
     //methods
 
     public int getTotal() {
@@ -64,6 +67,11 @@ public class BuisnessTripExpenses {
     @Override
     public String toString() {
         return RATE + ";" + account + ";" + transport + ";" + days + ";" + getTotal();
+    }
+
+    @Override
+    public int compareTo(BuisnessTripExpenses buisnessTripExpenses) {
+        return buisnessTripExpenses.getTotal() - getTotal();
     }
 
 }
