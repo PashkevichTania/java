@@ -8,7 +8,7 @@ public class Runner {
     public static void main(String[] args) {
         final String INPUT_FILE = "E:\\programming\\java\\java\\pr3\\src\\in.txt";
 
-        final String RATE_KEY = "rate";
+        final String RATE_KEY = "daily-rate";
         final String INDICES_KEY = "indices";
         final String ACCOUNT_KEY = "account%02d";
         final String TRANSPORT_KEY = "transport%02d";
