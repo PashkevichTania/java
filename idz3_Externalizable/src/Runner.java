@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Runner {
     public static void main(String[] args) {
 
-        final String TEXT_CSV = "E:\\programming\\java\\java\\idz2\\src\\text.scv";
+        final String TEXT_CSV = "E:\\programming\\java\\idz3_Externalizable\\src\\in.csv";
 
         try (Scanner scanner = new Scanner(new FileReader(TEXT_CSV))) {
             int totalPayment = 0;
@@ -38,11 +38,11 @@ public class Runner {
                 }
             }
             int averagePayment = totalPayment / employees.length;
+
             System.out.println("Average payment = " + averagePayment);
             System.out.println("Employees with kids = " + totalKids);
 
-            final String DAT_FILE = "E:\\programming\\java\\java\\idz2\\src\\text.dat";
-
+            final String DAT_FILE = "src/out.dat";
 
             System.out.println("-------Serialization-------------");
 
