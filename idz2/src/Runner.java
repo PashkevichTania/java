@@ -33,5 +33,11 @@ public class Runner {
         for (Derivative derivative: derivatives) {
             System.out.println(derivative);
         }
+        System.out.println("derivatives that cost more than 6000 and with risk more than 0.3: ");
+        for (Derivative derivative: derivatives) {
+            if (derivative.getInsurance().getRisk()>0.3 && derivative.getInsurance().getCost()>6000 ){
+                System.out.println(derivative);
+            }
+        }
         }
     }
