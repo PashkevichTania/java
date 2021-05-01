@@ -1,9 +1,11 @@
-package by.gsu.pms;
+package by.gsu.pms.insurance;
 
 import java.time.Year;
 
 public class AbstractInsurance implements Comparable<AbstractInsurance> {
 
+
+    private String id;
     private Year year;
     private int cost;
     private double risk;
@@ -12,10 +14,19 @@ public class AbstractInsurance implements Comparable<AbstractInsurance> {
 
     }
 
-    protected AbstractInsurance(Year year, int cost, double risk) {
+    protected AbstractInsurance(String id, Year year, int cost, double risk) {
+        this.id = id;
         this.year = year;
         this.cost = cost;
         this.risk = risk;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public Year getYear() {
@@ -49,7 +60,7 @@ public class AbstractInsurance implements Comparable<AbstractInsurance> {
 
     @Override
     public String toString() {
-        return this.year + ";" + this.cost + ";" + this.risk;
+        return this.id + ";" + this.year + ";" + this.cost + ";" + this.risk;
     }
 
 }
