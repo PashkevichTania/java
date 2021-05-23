@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 
 public class Runner {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MyException{
 
         final String TEXT_CSV = "src/text.scv";
 
@@ -19,10 +19,12 @@ public class Runner {
 
 
             for (int i = 0; i < MAX; i++) {
-                try{
+                try {
                     employees[i] = new Employee(scanner);
+
                 }catch(Exception e){
                     employees[i] = new Employee();
+                    throw new MyException();
                 }
             }
             for (Employee employee : employees) {
