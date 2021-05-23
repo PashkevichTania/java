@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Paragraph {
-    List<Sentence> sentences = new ArrayList<>();
+    public  List<Sentence> sentences = new ArrayList<>();
 
     public  Paragraph(Scanner scanner){
         while (scanner.hasNext()){

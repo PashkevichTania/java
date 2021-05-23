@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Sentence {
-    List<Word> words = new ArrayList<>();
+    public  List<Word> words = new ArrayList<>();
 
     public Sentence(Scanner scanner){
         while (scanner.hasNext()){

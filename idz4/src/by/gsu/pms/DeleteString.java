@@ -5,7 +5,7 @@ public class DeleteString {
 
         StringBuilder wordString = new StringBuilder(word.getText());
 
-        char firstChar = wordString.charAt(0);
+        char firstChar = 'i';
 
         for (int i = 0; i < wordString.length() - 1; i++) {
             if (wordString.charAt(i) == firstChar) {
